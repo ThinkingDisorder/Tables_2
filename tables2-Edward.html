@@ -20,44 +20,166 @@
         <li><a href="https://www.cuny.edu/">CUNY</a></li>
         <li><a href="https://www.bmcc.cuny.edu/">BMCC</a></li>
         <li><a href="https://www.baruch.cuny.edu/">BARUCH</a></li>
-        <!-- Add more links as needed -->
     </ul>
 
     <p>This lab exercise continues Lab #2: Tables. This lab exercise demonstrates how align, valign, colspan and rowspan work in HTML tables. The first 3 tables demonstrate how content is aligned horizontally (left, center, right) and vertically (top, middle, bottom) in table cells. Table 4 demonstrates the use of colspan and rowspan to merge cells. Table 5 demonstrates how tables can be used to create a "skeleton" for a web page's layout.</p>
 
-    <!-- Table 1 -->
-    <h2>Table 1: Horizontal and Vertical Alignment</h2>
-    <table>
+      <!-- Table 1 -->
+      <h2>Table 1: A simple 5 x 5 table with width=500</h2>
+      <table width="500" cellpadding="10">
+          <caption align="bottom"><strong>Table 2-1:</strong><br />A simple 5x5 table with cellpadding=10 and width=500. Expanding the width of the table allows you to see the default left alignment in the table cells.</caption>
+          <tr>
+              <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+          </tr>
+          <tr>
+              <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+          </tr>
+          <tr>
+              <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+          </tr>
+          <tr>
+              <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+          </tr>
+          <tr>
+              <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+          </tr>
+      </table>
+
+<div>&nbsp;</div>
+
+<!-- Table 2 -->
+<h2>Table 2: A table that shows default vertical alignment</h2>
+<table width="500" cellpadding="10">
+    <caption align="bottom"><strong>Table 2:</strong><br />Adding content to cells 1 and 6 allows you to see the default middle vertical alignment.</caption>
+    <tr>
+        <td>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10</td>
+        <td>2</td><td>3</td><td>4</td><td>5</td>
+    </tr>
+    <tr>
+        <td><img src="images/giraffe.jpg" width="107" height="148" alt="3 giraffes" /></td>
+        <td>7</td><td>8</td><td>9</td><td>10</td>
+    </tr>
+    <tr>
+        <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+    </tr>
+    <tr>
+        <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+    </tr>
+    <tr>
+        <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+    </tr>
+</table>
+
+<div>&nbsp;</div>
+
+ <!-- Table 3 -->
+<h2>Table 3: A table that shows default vertical alignment</h2>
+<table width="500" cellpadding="10">
+    <caption align="bottom"><strong>Table 3:</strong><br />Demonstrating the use of the align and valign attributes.</caption>
+    <tr>
+        <td>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10</td>
+        <td>Default&nbsp;vertical&nbsp;alignment&nbsp;=&nbsp;middle; no&nbsp;valign&nbsp;attribute&nbsp;used,&nbsp;in&nbsp;this&nbsp;cell.</td>
+        <td valign="top">3<br />valign="top"</td>
+        <td valign="bottom">4<br />valign="bottom"</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td><img src="images/giraffe.jpg" width="107" height="148" alt="3 giraffes" /></td>
+        <td>7<br />Default alignment = left; <br /> no align attribute used in this cell.</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td align="center">12<br />align="center"</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td align="right">17<br />align="right"</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+    </tr>
+</table>
+
+<div>&nbsp;</div>
+
+    <!-- Table 4 -->
+    <h2>Table 4:Demonstrating the use of the colspan and rowspan attributes</h2>
+
+    <table width="500" cellpadding="10">
+        <caption align="bottom"><strong>Table 2-1:</strong><br />A simple 5x5 table with cellpadding=10 and width=500. Expanding the width of the table allows you to see the default left alignment in the table cells.</caption>
         <tr>
-            <th colspan="2" align="center">Header</th>
+            <td colspan="3">colspan="3"</td><td>4</td><td>5</td>
         </tr>
         <tr>
-            <td rowspan="2" valign="top">Left</td>
-            <td>Cell 1</td>
+            <td rowspan="4">rowspan="4"</td><td>7</td><td>8</td><td colspan="2" rowspan="3">colspan=2 and rowspan="3" together<br/> merge cells in 2 directions</td>
         </tr>
         <tr>
-            <td>Cell 2</td>
+            <td>12</td><td>13</td>
         </tr>
         <tr>
-            <td colspan="2" align="center">Footer</td>
+            <td>17</td><td>18</td>
+        </tr>
+        <tr>
+           <td>22</td><td>23</td><td>24</td><td>25</td>
         </tr>
     </table>
 
-    <!-- Table 2 -->
-    <h2>Table 2: </h2>
-    <!-- Add your second table here -->
 
-    <!-- Table 3 -->
-    <h2>Table 3:</h2>
-    <!-- Add your third table here -->
+<!-- Empty div -->
+<div>&nbsp;</div>
 
-    <!-- Table 4 -->
-    <h2>Table 4:</h2>
-    <!-- Add your fourth table here -->
+<!-- Table 5 -->
+<h2>Table 5: Page Layout Skeleton</h2>
 
-    <!-- Table 5 -->
-    <h2>Table 5:</h2>
-    <!-- Add your fifth table here -->
+<table width="95%" border="1" align="center">
+    <caption align="bottom">Table 2-5: Demonstrating the use of colspan and rowspan to create a web page layout structure.<br/> Normally, you'd have border=0; the border is made visible here for demonstration purposes only.</caption>
+    <tr>
+        <td colspan="4" align="center"><h1>This is the Header</h1></td>
+    </tr>
+    <tr>
+        <td rowspan="2" valign="top"><h2>L Nav Bar</h2>
+            <ul>
+                <li><a href="https://www.cuny.edu/">CUNY</a></li>
+                <li><a href="https://www.bmcc.cuny.edu/">BMCC</a></li>
+                <li><a href="https://www.baruch.cuny.edu/">BARUCH</a></li>
+                <li><a href="https://www.brooklyn.cuny.edu/">BROOKLYN</a></li>
+                <li><a href="https://www.ccny.cuny.edu/">CCNY</a></li>
+            </ul>
+        </td>
+        <td>Main Content Part 1</td>
+        <td>Main Content Part 2</td>
+        <td rowspan="2" valign="top"><h2>R Nav Bar</h2>
+            <ul>
+                <li><a href="https://www.citytech.cuny.edu/">CITY TECH</a></li>
+                <li><a href="https://www.gc.cuny.edu/">GRADUATE CENTER</a></li>
+                <li><a href="https://www.qcc.cuny.edu/">QCC</a></li>
+                <li><a href="https://www.qc.cuny.edu/">QC</a></li>
+                <li><a href="https://www.hostos.cuny.edu/">HOSTOS</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Main Content Part 3</td>
+        <td>Main Content Part 4</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center"><p>Last Updated: 3/6/2024</p></td>
+    </tr>
+</table>
+
 
     <!-- Footer -->
     <footer>
